@@ -24,5 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('cadastro_aluno/', cadastro_aluno, name = "cadastro_aluno"),
     path('cadastro_projeto/', cadastro_projeto, name = "cadastro_projeto"),
-    path('criar_matricula', criar_matricula, name = "criar_matricula")
+    path('criar_matricula/', criar_matricula, name = "criar_matricula")
 ]

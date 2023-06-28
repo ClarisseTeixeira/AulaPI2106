@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import MatriculaForm
+from .models import Matricula
 # Create your views here.
 
 def criar_matricula(request):
@@ -10,4 +11,6 @@ def criar_matricula(request):
             form = MatriculaForm()
     else:
         form = MatriculaForm()
-    return render(request, "matricula/form.html", {'form': form})
+    return render(request, 'matricula\criar_matricula.html', {'form': form})
+
+

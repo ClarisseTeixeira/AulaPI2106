@@ -18,11 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from formuario.views import cadastro_aluno, cadastro_professor
 from projeto.views import cadastro_projeto
-from matricula.views import criar_matricula
+from matricula.views import criar_matricula, cadastrar_curso
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cadastro_aluno/', cadastro_aluno, name = "cadastro_aluno"),
     path('cadastro_projeto/', cadastro_projeto, name = "cadastro_projeto"),
-    path('criar_matricula/', criar_matricula, name = "criar_matricula")
+    path('criar_matricula/', criar_matricula, name = "criar_matricula"),
+    path('cadastrar_curso', cadastrar_curso, name = "cadastrar_curso")
 ]
